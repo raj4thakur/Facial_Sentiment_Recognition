@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.idea/
+.vscode/
+.pytest_cache/
+.DS_Store
+models/*.keras
+models/*.h5
+models/*.hdf5

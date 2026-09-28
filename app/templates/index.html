@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facial Expression Recognition</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Facial Expression Recognition</h1>
+            <p>FastAPI + OpenCV + TensorFlow</p>
+        </header>
+
+        <main class="card">
+            <div class="camera-wrapper">
+                <video id="video" autoplay playsinline muted></video>
+                <canvas id="overlay"></canvas>
+            </div>
+
+            <div class="controls">
+                <button id="startButton">Start Camera</button>
+                <button id="stopButton" disabled>Stop Camera</button>
+            </div>
+
+            <div class="status">
+                <span id="statusDot" class="dot"></span>
+                <span id="statusText">Camera stopped</span>
+            </div>
+
+            <div class="result-panel">
+                <h2>Detected Emotions</h2>
+                <div id="results">
+                    <p class="muted">Start the camera to begin detection.</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <span>Emotion classes: Angry · Disgust · Fear · Happy · Normal · Sad · Suprise</span>
+        </footer>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
